@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Student Management — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuToggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+    <div class="brand">EduTrack</div>
+    <div class="top-actions">
+      <button class="icon-btn">🔔</button>
+      <div class="avatar">PY</div>
+    </div>
+  </header>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="logo">EduTrack</div>
+      <nav>
+        <a class="active">Dashboard</a>
+        <a>Students</a>
+        <a>Attendance</a>
+        <a>Exams</a>
+        <a>Settings</a>
+      </nav>
+      <div class="sidebar-footer">v0.1 — Demo UI</div>
+    </aside>
+
+    <main class="main">
+      <section class="summary">
+        <h1>Dashboard</h1>
+        <p class="muted">Overview of student management system</p>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">Total Students</div>
+            <div class="card-value" data-target="1248">0</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Active Today</div>
+            <div class="card-value" data-target="842">0</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Attendance %</div>
+            <div class="card-value" data-target="92">0</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">New Admissions</div>
+            <div class="card-value" data-target="27">0</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panels">
+        <div class="panel students-panel">
+          <div class="panel-header">
+            <h2>Students</h2>
+            <div class="small-actions">
+              <input placeholder="Search students" aria-label="Search">
+              <button class="primary">Add</button>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Class</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1001</td>
+                  <td>Aisha Khan</td>
+                  <td>10-A</td>
+                  <td><span class="status on">Present</span></td>
+                  <td><button class="ghost">View</button></td>
+                </tr>
+                <tr>
+                  <td>#1002</td>
+                  <td>Rohit Sharma</td>
+                  <td>9-B</td>
+                  <td><span class="status off">Absent</span></td>
+                  <td><button class="ghost">View</button></td>
+                </tr>
+                <tr>
+                  <td>#1003</td>
+                  <td>Meera Patel</td>
+                  <td>11-C</td>
+                  <td><span class="status on">Present</span></td>
+                  <td><button class="ghost">View</button></td>
+                </tr>
+                <!-- more dummy rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel side-panel">
+          <div class="panel-header">
+            <h2>Quick Actions</h2>
+          </div>
+
+          <div class="actions">
+            <button class="primary full">Mark Attendance</button>
+            <button class="outline full">Export CSV</button>
+            <button class="ghost full">Import Students</button>
+          </div>
+
+          <div class="recent">
+            <h3>Recent Activity</h3>
+            <ul>
+              <li>New student <strong>#1004</strong> added</li>
+              <li>Attendance taken for <strong>Class 10</strong></li>
+              <li>Exam schedule published</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
