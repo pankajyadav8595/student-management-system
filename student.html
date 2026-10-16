@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Student — Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuToggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+    <div class="brand">EduTrack</div>
+    <div class="top-actions">
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+      <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      <div class="avatar">PY</div>
+    </div>
+  </header>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="logo">EduTrack</div>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a class="active">Students</a>
+        <a>Attendance</a>
+        <a>Exams</a>
+        <a>Settings</a>
+      </nav>
+      <div class="sidebar-footer">v0.1 — Demo UI</div>
+    </aside>
+
+    <main class="main">
+      <section class="summary">
+        <h1>Student Profile</h1>
+        <p class="muted">Detailed view for an individual student</p>
+
+        <div class="student-card">
+          <div class="student-header">
+            <div class="avatar large">AP</div>
+            <div class="student-meta">
+              <h2>Aisha Khan</h2>
+              <p class="muted">ID: #1001 · Class: 10-A</p>
+            </div>
+            <div class="student-actions">
+              <a href="index.html" class="ghost">← Back to dashboard</a>
+            </div>
+          </div>
+
+          <div class="student-details">
+            <div class="detail">
+              <h3>Contact</h3>
+              <p>Email: aisha.khan@example.com<br>Phone: +91 98765 43210</p>
+            </div>
+
+            <div class="detail">
+              <h3>Attendance</h3>
+              <p>Attendance this month: <strong>94%</strong></p>
+            </div>
+
+            <div class="detail">
+              <h3>Recent Grades</h3>
+              <table class="grades">
+                <thead>
+                  <tr><th>Subject</th><th>Exam</th><th>Score</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Mathematics</td><td>Midterm</td><td>88</td></tr>
+                  <tr><td>Science</td><td>Midterm</td><td>91</td></tr>
+                  <tr><td>English</td><td>Midterm</td><td>85</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="detail">
+              <h3>Notes</h3>
+              <p class="muted">No disciplinary notes. Parent meeting scheduled on 2026-11-05.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
